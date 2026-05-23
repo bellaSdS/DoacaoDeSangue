@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="←"
+        android:textSize="30sp"
+        android:textColor="#D50000"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="4dp"
+        android:padding="4dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnBack"
+        android:layout_marginTop="12dp"
+        android:paddingTop="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvRequisitos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="#FFF0F0"
+                android:padding="16dp"
+                android:text="REQUISITOS PARA DOAR:\n\n• Idade mínima: 18 anos\n• Estar saudável\n• Pesando acima de 50kg\n• Não possuir doenças transmissíveis\n• Apresentar documento de identificação"
+                android:textColor="#A00000"
+                android:textSize="17sp" />
+
+
+            <Button
+                android:id="@+id/btnLocais"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="30dp"
+                android:backgroundTint="#C40000"
+                android:text="Locais de Doação"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+
+            <Button
+                android:id="@+id/btnAgendar"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="30dp"
+                android:backgroundTint="#C40000"
+                android:text="Agendar Doação"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+
+            <Button
+                android:id="@+id/btnHistorico"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="30dp"
+                android:backgroundTint="#C40000"
+                android:text="Histórico de Agendamentos"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+
+            <Button
+                android:id="@+id/btnPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="46dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="24dp"
+                android:backgroundTint="#C40000"
+                android:text="Perfil do Usuário"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

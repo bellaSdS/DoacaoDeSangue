@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tvTitulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Agendar Doação"
+            android:textSize="24sp"
+            android:textColor="#B71C1C"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/etData"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Selecionar Data"
+            android:focusable="false"
+            android:clickable="true"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:textSize="16sp"
+            android:textColor="#B71C1C" />
+
+        <EditText
+            android:id="@+id/etHorario"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="Selecionar Horário"
+            android:focusable="false"
+            android:clickable="true"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"
+            android:textSize="16sp"
+            android:textColor="#B71C1C" />
+
+        <Spinner
+            android:id="@+id/spinnerLocal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginBottom="32dp" />
+
+        <Button
+            android:id="@+id/btnConfirmar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Confirmar Agendamento"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#D32F2F"
+            android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>
